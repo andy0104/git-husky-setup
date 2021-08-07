@@ -1,0 +1,7 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+npm run lint:fix && npm run test
+
+## This command "exit" actually does not let the commit happen
+## exit 1
